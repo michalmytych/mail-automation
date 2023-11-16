@@ -1,6 +1,10 @@
 # https://laravel.com/docs/10.x
 
-### Uruchomienie projektu:
+### Tworzenie projektu
+
+composer create-project laravel/laravel example-app
+
+### Uruchomienie projektu (na http://localhost:8000):
 
 php artian serve
 
@@ -16,7 +20,7 @@ Otwierasz plik: /routes/web.php
 
 /resources/views/welcome.blade.php
 
-# Migracje
+# Uzupełniamy dane logowania bazy danych w pliku .env i robimy php artisan config:cache a następnie php artisan migrate 
 https://laravel.com/docs/10.x/migrations
 
 
