@@ -13,6 +13,7 @@ return new class extends Migration
     {
         Schema::create('mails', function (Blueprint $table) {
             $table->id();
+            $table->string('qr_code_value');
             $table->timestamps();
         });
     }

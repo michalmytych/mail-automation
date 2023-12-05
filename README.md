@@ -1,26 +1,27 @@
-# https://laravel.com/docs/10.x
+# Wymagania
 
-### Tworzenie projektu
+1. Uzytkownik moze stworzyc model maila o kolumnach:
+    - adresaci
+    - temat / nagłówek
+    - treść
+    - data opóźnionego przesłania
+    - załączniki
 
-composer create-project laravel/laravel example-app
+2. Lista wszystkich maili, na niej niech wyświetlają się:
+    - adresat
+    - temat
 
-### Uruchomienie projektu (na http://localhost:8000):
+3. Widok pojedycznego maila:
+    - wyświetlają się wszystkie kolumny maila
 
-php artian serve
+4. Mechanizm automatycznego wysyłania maili o określonym czasie.
 
-### Po kazdej zmianie w pliku .env, jesli chcemy zeby zmiany sie zaladowaly do aplikacji, to musimy wykonac:
+5. Edycja szablonu maila, mozliwosc edycji wszystkich kolumn.
 
-php artisan config:cache
+6. Konta uzytkownikow, rejestracja, logowanie, zmiana hasla.
 
-### Sprawdzanie co dzieje sie w aplikacji:
+* * *
 
-Otwierasz plik: /routes/web.php
-
-### Wyświetlmy widok ktory jest renderowany przez view('welcome')
-
-/resources/views/welcome.blade.php
-
-# Uzupełniamy dane logowania bazy danych w pliku .env i robimy php artisan config:cache a następnie php artisan migrate 
-https://laravel.com/docs/10.x/migrations
-
-
+1. Spróbować dodać kolumny do modelu Mail (na początku niech wszystkie kolumny które dodajesz są ->nullable() )
+2. Wyświetlić pojedyczny mail
+3. Spróbować dodać input dla jakiejś kolumny do formularza dodawania
